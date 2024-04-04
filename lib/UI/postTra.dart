@@ -9,7 +9,6 @@ class _PostTraState extends State<PostTra> {
    @override 
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:AppBar(title: Text('Trajet')),
       body: const Center(
         child: Text('Publier un trajet', style: TextStyle(fontSize: 20)),
       ),
