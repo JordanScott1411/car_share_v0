@@ -63,7 +63,7 @@ class _HomeState extends State<Home>{
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(
-                        Icons.car_rental,
+                        Icons.departure_board_rounded,
                         color: currentTab == 0? Colors.blue : Colors.grey,
                       ),
                       Text(
@@ -86,7 +86,7 @@ class _HomeState extends State<Home>{
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
-                    Icons.ac_unit,
+                    Icons.add_circle,
                     color: currentTab == 1? Colors.blue : Colors.grey,
                   ),
                   Text(
@@ -108,19 +108,19 @@ class _HomeState extends State<Home>{
                   onPressed:() {
                     setState(() {
                       currentScreen= Mytrajet();
-                      currentTab=0;
+                      currentTab=2;
                     });
                   },
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(
-                        Icons.search,
-                        color: currentTab == 0? Colors.blue : Colors.grey,
+                        Icons.messenger,
+                        color: currentTab == 2? Colors.blue : Colors.grey,
                       ),
                       Text(
-                        'Mes Trajets',
-                        style: TextStyle(color: currentTab ==0 ? Colors.blue : Colors.grey
+                        'Messages',
+                        style: TextStyle(color: currentTab ==2 ? Colors.blue : Colors.grey
                         ),
                       )
                     ],
@@ -131,19 +131,19 @@ class _HomeState extends State<Home>{
               onPressed:() {
                 setState(() {
                   currentScreen= PostTra();
-                  currentTab=1;
+                  currentTab=3;
                 });
               },
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
-                    Icons.ac_unit,
-                    color: currentTab == 1? Colors.blue : Colors.grey,
+                    Icons.supervised_user_circle,
+                    color: currentTab == 3? Colors.blue : Colors.grey,
                   ),
                   Text(
-                    'Publier',
-                    style: TextStyle(color: currentTab ==1 ? Colors.blue : Colors.grey
+                    'Profile',
+                    style: TextStyle(color: currentTab ==3 ? Colors.blue : Colors.grey
                     ),
                   )
                 ],

@@ -10,7 +10,6 @@ import 'package:flutter/material.dart';
     @override
     Widget build(BuildContext context) {
       return Scaffold(
-        appBar: AppBar(title: Text('Perfil')),
         body: const Center(
           child: Text('Mon profile', style: TextStyle(fontSize: 40),),
         ),
