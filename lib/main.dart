@@ -1,5 +1,5 @@
 import 'package:car_share_v0/UI/home.dart';
-import 'package:car_share_v0/UI/omboarding_screen.dart';
+import 'package:car_share_v0/UI/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  const MaterialApp(
       title: 'CarShare',
-      home: OnboardingScreen(),
+      home: Splash(),
       debugShowCheckedModeBanner: false,
     );
   }
