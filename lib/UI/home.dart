@@ -2,6 +2,7 @@ import 'package:car_share_v0/UI/chat.dart';
 import 'package:car_share_v0/UI/postTra.dart';
 import 'package:car_share_v0/UI/profile.dart';
 import 'package:car_share_v0/UI/mytrajet.dart';
+import 'package:car_share_v0/UI/seachTrajet.dart';
 import 'package:car_share_v0/UI/suiviTraj.dart';
 import 'package:flutter/material.dart';
 
@@ -36,6 +37,7 @@ class _HomeState extends State<Home>{
    floatingActionButton: FloatingActionButton(
     child: Icon(Icons.search),
     onPressed: () {
+      Navigator.push(context, MaterialPageRoute(builder: (context) => SearchTrajet()));
       //Action que doit faire ce boutton
     },
    ),
