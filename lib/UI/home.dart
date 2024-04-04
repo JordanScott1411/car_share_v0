@@ -67,7 +67,7 @@ class _HomeState extends State<Home>{
                         color: currentTab == 0? Colors.blue : Colors.grey,
                       ),
                       Text(
-                        'Mes Trajets',
+                        'Trajets',
                         style: TextStyle(color: currentTab ==0 ? Colors.blue : Colors.grey
                         ),
                       )
